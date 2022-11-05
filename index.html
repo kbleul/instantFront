@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="index.css">
+    <title>Instant Mobile App Agency</title>
+</head>
+<body>
+    
+    <article id="main_article">
+        <div id="secondary_container">
+            <h1>How You Can Use A NEW ‘Done For You’ Software To Tap Into this $77 BilIon Dollar Industry And Generate Consistent Pay Days <br>
+            </h1>
+            <h4 id="here">Beginner Friendly - Do From The Comfort Of Your Own Home</h4> 
+            
+                <input id="email" type="email" required placeholder="Your Email Address"/>
+                <p id="warning">Please Enter a Valid Email Address</p>
+                <input type="submit" id="forward" value="Find Out More" />
+          
+        </div>
+
+    </article>
+</body>
+
+<script>
+
+
+const saveEmail = async (email) => {
+
+    $("#email").val("")
+
+    const response = await fetch("https://tinyurl.com/4fwfbvhk/addme", {
+    method: 'POST', 
+    headers: {  'Content-Type': 'application/json'  },
+    body: JSON.stringify({email}) 
+  });
+
+    location.href = "https://jvz2.com/c/2703651/366394/";
+}
+
+
+function validateEmail(email) {
+        let res = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        return res.test(email);
+}
+
+
+function validate() {
+    let email = $("#email").val();
+
+    if(validateEmail(email)) {
+          $("#warning").hide() 
+          saveEmail(email)
+    } 
+    else {  $("#warning").show()   }
+
+    return false;
+}
+
+ document.getElementById("forward").addEventListener("click", validate )
+
+</script>
+</html>
